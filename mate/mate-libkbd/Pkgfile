@@ -1,20 +1,17 @@
-# Description: MATE keyboard library
+# Description: MATE keyboard library.
 # URL: http://matsusoft.com.ar/projects/mate
-# Maintainer: NuTyX
-# Packager: fanchyannmaria at orange dot fr
+# Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
 # Depends on: mate-common dconf gtk2 iso-codes xorg-libxklavier
 
 name=mate-libkbd
-version=1.14.1
+version=1.18.1
 release=1
 _name=libmatekbd
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
 build() {
 cd ${_name}-$version
-./configure  --prefix=/usr \
---with-gtk=2.0 \
---disable-static
+./configure  --prefix=/usr 
 make
 make DESTDIR=$PKG install
 }

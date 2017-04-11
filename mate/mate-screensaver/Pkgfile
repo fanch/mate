@@ -1,10 +1,10 @@
-# Description:  Screensaver for MATE
+# Description: Screensaver for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
-# Maintainer: NuTyX core team
-# Packager: fanchyannmaria at orange dot fr
-# Depends on: gtk2 libnotify libxss mate-desktop mate-libkbd mate-menus mate-power-manager mate-session-manager 
+# Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
+# Depends on: gtk2 libnotify xorg-libxscrnsaver mate-desktop mate-libkbd mate-menus mate-power-manager mate-session-manager xorg-libxscrnsaver
+
 name=mate-screensaver
-version=1.14.1
+version=1.18.0
 release=1
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
@@ -18,9 +18,7 @@ cd $name-$version
         --with-xscreensaverhackdir=/usr/lib/xscreensaver \
         --with-mit-ext \
         --with-libnotify \
-        --enable-locking \
-        --with-gtk=2.0 \
-        --disable-static
+        --enable-locking 
 make 
 make DESTDIR=$PKG install
 }

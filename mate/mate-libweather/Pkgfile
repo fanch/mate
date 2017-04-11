@@ -1,11 +1,10 @@
 # Description: Provides access to weather information from the Internet.
 # URL: http://matsusoft.com.ar/projects/mate
-# Maintainer: NuTyX core team
-# Packager: fanchyannmaria at orange dot fr
-# Depends on: dconf gtk2 libsoup 
+# Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
+# Depends on: dconf gtk2 libsoup
 
 name=mate-libweather
-version=1.14.0
+version=1.18.0
 release=1
 _name=libmateweather
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
