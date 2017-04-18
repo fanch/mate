@@ -1,7 +1,7 @@
 # Description: Menu MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on:  intltool glib gobject-introspection python
+# Depends on:  intltool glib gobject-introspection python2
 
 name=mate-menus
 version=1.18.0
