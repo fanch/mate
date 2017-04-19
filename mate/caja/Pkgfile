@@ -1,7 +1,7 @@
 # Description: File manager for the MATE desktop (GTK2 version).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: exempi mate-desktop pango gtk2 libexif libxml2 libunique1 desktop-file-utils
+# Depends on: exempi mate-desktop pango gtk2 libexif libxml2 libunique1 desktop-file-utils libnotify
 # Run on: desktop-file-utils
 
 name=caja
