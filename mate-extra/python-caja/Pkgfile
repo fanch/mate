@@ -1,7 +1,7 @@
 # Description: Python for Caja.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: caja python-gobject2
+# Depends on: caja python2-gobject2
 
 name=python-caja
 version=1.18.0
