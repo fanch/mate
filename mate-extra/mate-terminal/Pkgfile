@@ -1,7 +1,7 @@
 # Description: Terminal MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: gtk2 mate-desktop  vte
+# Depends on: gtk2 mate-desktop  vte3
 
 name=mate-terminal
 version=1.18.0
