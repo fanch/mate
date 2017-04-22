@@ -1,7 +1,7 @@
 # Description: An image viewing and cataloging program for MATE (GTK2 version).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: exempi gtk2 gtk-update-icon-cache libexif mate-desktop mate-icon-theme python-gobject2 python-gtk
+# Depends on: exempi gtk2 gtk-update-icon-cache libexif mate-desktop mate-icon-theme python2-gobject2 python2-gtk 
 
 name=eom
 version=1.18.1
