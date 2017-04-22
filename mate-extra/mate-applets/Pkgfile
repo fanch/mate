@@ -5,6 +5,7 @@
 
 name=mate-applets
 version=1.18.1
+release=1
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
 build() {
