@@ -1,7 +1,7 @@
 # Description: A simple window management tool (GTK2 version).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: gtk2 libwnck libfakekey libunique1 mate-panel
+# Depends on: gtk3 libwnck3 libfakekey libunique1 mate-panel
 
 name=mate-netbook
 version=1.18.0

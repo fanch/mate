@@ -2,7 +2,7 @@
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
 # Depends on: mate-menus python-gobject gtk-update-icon-cache
-# Runs on :python-gobject gtk-update-icon-cache
+# Runs on : python-gobject gtk-update-icon-cache
 
 name=mozo
 version=1.18.0

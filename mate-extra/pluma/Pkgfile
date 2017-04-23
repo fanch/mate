@@ -1,7 +1,7 @@
 # Description: A powerful text editor for MATE
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: enchant gtk2 libsoup iso-codes gtksourceview3 mate-desktop python2-gobject2 python2-gtk python2-gtksourceview2 libpeas
+# Depends on: enchant gtk3 libsoup iso-codes gtksourceview3 mate-desktop python2-gobject2 python2-gtk python2-gtksourceview2 libpeas
 
 name=pluma
 version=1.18.1
@@ -13,7 +13,7 @@ cd $name-$version
 ./configure \
         --prefix=/usr \
         --libexecdir=/usr/lib/${name} \
-        --with-gtk=2.0 \
+        --with-gtk=3.0 \
         --enable-gtk-doc=no \
         --enable-python
 make

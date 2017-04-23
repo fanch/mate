@@ -1,7 +1,7 @@
 # Description: A MATE Panel applet to display readings from hardware sensors.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: gtk2 libatasmart libnotify lm-sensors mate-panel
+# Depends on: gtk3 libatasmart libnotify lm-sensors mate-panel
 
 name=mate-sensors-applet
 version=1.18.1

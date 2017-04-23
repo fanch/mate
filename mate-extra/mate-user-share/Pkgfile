@@ -1,7 +1,7 @@
 # Description: User level public file sharing via WebDAV for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: apache bluez caja dconf gdk-pixbuf gtk2 libnotify libcanberra libunique1 mod-dnssd
+# Depends on: apache bluez caja dconf gdk-pixbuf gtk3 libnotify libcanberra libunique1 mod-dnssd
 
 name=mate-user-share
 version=1.18.0

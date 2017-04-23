@@ -1,7 +1,7 @@
 # Description: Simply a pdf document viewer.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: caja dconf djvulibre gtk2 libsecret libspectre mate-desktop mate-icon-theme poppler-glib poppler
+# Depends on: caja dconf djvulibre gtk3 libsecret libspectre mate-desktop mate-icon-theme poppler-glib poppler
 
 name=atril
 version=1.18.0
@@ -14,7 +14,7 @@ sed -i 's|/usr/share/javascript/mathjax|/usr/share/mathjax|' backend/epub/epub-d
 ./configure \
         --prefix=/usr \
         --libexecdir=/usr/lib/${name} \
-        --with-gtk=2.0 \
+        --with-gtk=3.0 \
         --enable-gtk-doc \
         --enable-djvu \
         --enable-dvi \
