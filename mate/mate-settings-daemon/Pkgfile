@@ -1,7 +1,7 @@
 # Description: The MATE Settings daemon (GTK2 version).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: dconf gtk2 libcanberra libnotify mate-desktop mate-libkbd mate-libmixer nss xorg-libxt
+# Depends on: dconf gtk3 libcanberra libnotify mate-desktop mate-libkbd mate-libmixer nss xorg-libxt
 
 name=mate-settings-daemon
 version=1.18.1

@@ -1,7 +1,7 @@
 # Description: A system monitor for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: dconf gtk2 gtkmm3 glibmm libgtop libwnck3 librsvg mate-icon-theme
+# Depends on: dconf gtk3 gtkmm3 glibmm libgtop libwnck3 librsvg mate-icon-theme
 
 name=mate-system-monitor
 version=1.18.0

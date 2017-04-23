@@ -1,8 +1,8 @@
 # Description: Library with common API for various MATE modules.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: dconf gtk2 startup-notification
-# Run on: gobject-introspection gtk-doc intltool
+# Depends on: dconf gtk3 startup-notification
+
 
 name=mate-desktop
 version=1.18.0

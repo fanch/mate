@@ -1,7 +1,7 @@
 # Description: Notification daemon for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: dconf gtk2 libcanberra libwnck3 libnotify
+# Depends on: dconf gtk3 libcanberra libwnck3 libnotify
 
 name=mate-notification-daemon
 version=1.18.0

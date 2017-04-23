@@ -1,7 +1,7 @@
 # Description: Screensaver for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: gtk2 libnotify xorg-libxscrnsaver mate-desktop mate-libkbd mate-menus mate-power-manager mate-session-manager xorg-libxscrnsaver
+# Depends on: gtk3 libnotify xorg-libxscrnsaver mate-desktop mate-libkbd mate-menus mate-power-manager mate-session-manager xorg-libxscrnsaver
 
 name=mate-screensaver
 version=1.18.0

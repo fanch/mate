@@ -1,7 +1,7 @@
 # Description: MATE Media Tools (GStreamer).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: gobject-introspection gtk2 libcanberra libunique1 libxml2 mate-desktop mate-libmixer marco
+# Depends on: gobject-introspection gtk3 libcanberra libunique1 libxml2 mate-desktop mate-libmixer marco
 
 name=mate-media
 version=1.18.0

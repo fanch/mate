@@ -1,7 +1,7 @@
-# Description: A window manager for MATE (GTK2 version).
+# Description: A window manager for MATE (GTK3 version).
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: mate-desktop gtk2 libcanberra libgtop startup-notification zenity
+# Depends on: mate-desktop gtk3 libcanberra libgtop startup-notification zenity
 
 
 name=marco
@@ -15,7 +15,7 @@ cd $name-$version
         --prefix=/usr \
         --sysconfdir=/etc \
         --localstatedir=/var \
-        --with-gtk=2.0 \
+        --with-gtk=3.0 \
         --enable-startup-notification \
         --disable-static
 make

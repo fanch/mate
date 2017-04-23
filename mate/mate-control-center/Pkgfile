@@ -1,7 +1,7 @@
 # Description: The Control Center for MATE.
 # URL: http://matsusoft.com.ar/projects/mate
 # Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
-# Depends on: murrine caja dconf desktop-file-utils gsettings-desktop-schemas gtk2 libgtop librsvg libunique1 xorg-libxscrnsaver xorg-libxt mate-desktop mate-icon-theme mate-libkbd mate-menus marco mate-settings-daemon
+# Depends on: murrine caja dconf desktop-file-utils gsettings-desktop-schemas gtk3 libgtop librsvg libunique1 xorg-libxscrnsaver xorg-libxt mate-desktop mate-icon-theme mate-libkbd mate-menus marco mate-settings-daemon
 
 name=mate-control-center
 version=1.18.1
