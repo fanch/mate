@@ -1,24 +1,41 @@
-# Description: Provides access to weather information from the Internet.
-# URL: http://matsusoft.com.ar/projects/mate
-# Packager: fanchyannmaria at orange dot fr, tnut at nutyx dot org
 # Depends on: dconf gtk3 libsoup
 
+description="Provides access to weather information from the Internet"
+url="https://mate-desktop.org/"
+packager="greg <greg@nutyx.org>"
+contributors="fanch,tnut,jayce,greg"
+
 name=mate-libweather
-version=1.18.0
-release=1
 _name=libmateweather
+version=1.20.0
+release=1
+
 source=(http://pub.mate-desktop.org/releases/${version%.*}/${_name}-$version.tar.xz)
 
 build() {
-cd ${_name}-$version
-	./configure \
-        --prefix=/usr \
-        --sysconfdir=/etc \
-        --localstatedir=/var \
-        --with-gtk=3.0 \
-        --disable-static \
-        --disable-python \
-        --enable-locations-compression
-make
-make DESTDIR=$PKG install
+
+	cd ${_name}-$version
+		./configure \
+	        --prefix=/usr \
+	        --sysconfdir=/etc \
+	        --localstatedir=/var \
+	        --with-gtk=3.0 \
+	        --disable-static \
+	        --disable-python \
+	        --enable-locations-compression
+	make
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+	make DESTDIR=$PKG install
+}
+
+uptodate() {
+feed=https://github.com/mate-desktop/$_name/releases.atom 
+exec="lynx -read_timeout=20 -dump -listonly -nonumbers $feed"
+ligne=1 # nombre de notification ? afficher
+$exec $feed | grep title | \
+sed "s@<title>@@" | \
+sed "s@</title>@@" | \
+sed "s@v@@" | sed "s@ @@g" | \
+head -n $(($ligne+1 )) | \
+tail -n $(($ligne))
 }
