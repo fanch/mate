@@ -6,12 +6,11 @@ packager="tnut <tnut@nutyx.org>"
 contributors="Fanch, Tnut, Jayce, Remy, Greg"
 
 name=mate-settings-daemon
-version=1.20.1
-
+version=1.20.3
+release=1
 source=(http://pub.mate-desktop.org/releases/${version%.*}/$name-$version.tar.xz)
 
 build() {
-
   cd $name-$version
   ./configure \
           --prefix=/usr \
@@ -22,17 +21,5 @@ build() {
   make
   sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
   make DESTDIR=$PKG install
-  rm $PKG/usr/lib/mate-settings-daemon/*.la  
 }
 
-uptodate() {
-feed=https://github.com/mate-desktop/$name/releases.atom 
-exec="lynx -read_timeout=20 -dump -listonly -nonumbers $feed"
-ligne=1 # nombre de notification ? afficher
-$exec $feed | grep title | \
-sed "s@<title>@@" | \
-sed "s@</title>@@" | \
-sed "s@v@@" | sed "s@ @@g" | \
-head -n $(($ligne+1 )) | \
-tail -n $(($ligne))
-}
